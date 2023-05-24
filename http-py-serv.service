@@ -1,0 +1,11 @@
+[Unit]
+Description=Python HTTP server
+
+[Service]
+User=vagrant
+WorkingDirectory=/home/vagrant
+ExecStart=/usr/bin/sudo /usr/bin/python3 /home/vagrant/server.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
